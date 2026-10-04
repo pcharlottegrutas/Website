@@ -12,28 +12,31 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
 
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        pastelPink: '#FFE5EC',
-                        softBlush: '#FFC2D1',
-                        bubblegumPink: '#FF8FAB',
-                        vibrantPink: '#FB6F92',
-                        skyBlue: '#E0F4FF',
-                        babyBlue: '#B9E5E8',
-                        softSky: '#7FA1C3',
-                        deepBlueAccent: '#4A729A',
-                    },
-                    fontFamily: {
-                        sans: ['"SF UI Text"', '-apple-system', 'BlinkMacSystemFont', '"SF Pro Text"', 'system-ui', '"Segoe UI"', 'Roboto', 'Helvetica', 'Arial', 'sans-serif'],
-                        cursive: ['"Sacramento"', 'cursive'],
-                    }
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    // Soft Light Blue & Baby Blue shades
+                    skyBlue: '#E0F2FE',
+                    babyBlue: '#BAE6FD',
+                    softBlue: '#7DD3FC',
+                    vibrantBlue: '#38BDF8',
+                    
+                    // Cute Light Pink accent shades
+                    ultraLightPink: '#FFF0F5',
+                    pastelPink: '#FFE5EC',
+                    softBlush: '#FFC2D1',
+                    vibrantPink: '#FB6F92',
+                },
+                fontFamily: {
+                    sans: ['"Poppins"', 'sans-serif'],
+                    cursive: ['"Great Vibes"', 'cursive'],
                 }
             }
         }
+    }
     </script>
-
+    
     <style>
         body, button, input, select, textarea, h1, h2, h3, h4, h5, h6, p, span, a, li, blockquote {
             font-family: "SF UI Text", -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
