@@ -7,7 +7,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Fonts: Poppins (Clean, Modern) & Great Vibes (Aesthetic Cursive) -->
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
 
@@ -98,10 +97,8 @@
 </head>
 <body class="bg-ultraLightPink/40 text-slate-700 font-sans relative overflow-x-hidden selection:bg-softBlush selection:text-vibrantPink">
 
-    <!-- Floating Background Bows & Hearts -->
     <div id="floating-container" class="fixed inset-0 overflow-hidden z-0 pointer-events-none"></div>
 
-    <!-- Header & Title -->
     <header class="relative hero-gradient py-10 px-4 border-b border-softBlush/60 text-center z-10">
         <h1 class="text-3xl sm:text-5xl font-extrabold text-vibrantPink drop-shadow-sm tracking-wide">
             🎀 Seasa's Personal Website 🎀
@@ -111,7 +108,6 @@
         </p>
     </header>
 
-    <!-- Navigation Bar (Reduced to 4 Webpage Tabs) -->
     <nav class="sticky top-0 z-40 backdrop-blur-md bg-white/90 border-b border-softBlush/60 shadow-sm">
         <div class="max-w-4xl mx-auto px-4 flex items-center justify-center h-14">
             <div class="flex space-x-2 sm:space-x-4 text-xs sm:text-sm font-semibold overflow-x-auto py-1">
@@ -123,52 +119,46 @@
         </div>
     </nav>
 
-    <!-- Floating Audio Vibe Visualizer Player -->
-<div class="fixed bottom-5 right-5 z-40 bg-white/95 backdrop-blur-md p-3 rounded-2xl border-2 border-softBlush shadow-xl flex items-center gap-3">
-    <button id="audio-toggle-btn" onclick="toggleAudio()" class="w-10 h-10 rounded-full bg-vibrantPink text-white flex items-center justify-center shadow-md active:scale-90 transition">
-        <i id="audio-icon" class="fa-solid fa-play"></i>
-    </button>
-    <div class="hidden sm:block text-xs">
-        <div class="font-bold text-slate-800">Aesthetic Vibe</div>
-        <div class="text-[10px] text-vibrantPink font-medium"><span id="audio-status">Click to play melody</span></div>
-    </div>
-    <div id="visualizer-bars" class="hidden flex items-end gap-1 h-5 px-1">
-        <div class="w-1 bg-vibrantPink rounded-full eq-bar h-2"></div>
-        <div class="w-1 bg-bubblegumPink rounded-full eq-bar h-4"></div>
-        <div class="w-1 bg-softBlush rounded-full eq-bar h-3"></div>
-    </div>
-
-    <!-- AUDIO PLACEHOLDER: Replace 'your-music-file.mp3' with your exact MP3 file name -->
- <audio id="bg-audio" loop preload="none">
-    <source src="The Feels (instrumental).mp3" type="audio/mpeg">
-</audio>
-</div>
-
-    <!-- Main Content Area -->
-    <main class="max-w-4xl mx-auto px-4 py-8 z-10 relative">
-
-        <!-- Cover Photo Placeholder -->
-        <div class="w-full h-48 sm:h-64 bg-pastelPink/30 rounded-3xl border-2 border-dashed border-softBlush mb-8 overflow-hidden relative flex items-center justify-center shadow-inner">
-            <img id="cover.png" src="cover.png" alt="Cover Photo" class="w-full h-full object-cover">
-            <span class="absolute bottom-2 right-3 bg-white/90 px-3 py-1 rounded-full text-[11px] font-semibold text-vibrantPink border border-softBlush shadow-sm">
-                Owner Cover Placeholder
-            </span>
+    <!-- Audio Player (Corrected Filename & Extension) -->
+    <div class="fixed bottom-5 right-5 z-40 bg-white/95 backdrop-blur-md p-3 rounded-2xl border-2 border-softBlush shadow-xl flex items-center gap-3">
+        <button id="audio-toggle-btn" onclick="toggleAudio()" class="w-10 h-10 rounded-full bg-vibrantPink text-white flex items-center justify-center shadow-md active:scale-90 transition">
+            <i id="audio-icon" class="fa-solid fa-play"></i>
+        </button>
+        <div class="hidden sm:block text-xs">
+            <div class="font-bold text-slate-800">Aesthetic Vibe</div>
+            <div class="text-[10px] text-vibrantPink font-medium"><span id="audio-status">Click to play melody</span></div>
+        </div>
+        <div id="visualizer-bars" class="hidden flex items-end gap-1 h-5 px-1">
+            <div class="w-1 bg-vibrantPink rounded-full eq-bar h-2"></div>
+            <div class="w-1 bg-bubblegumPink rounded-full eq-bar h-4"></div>
+            <div class="w-1 bg-softBlush rounded-full eq-bar h-3"></div>
         </div>
 
-        <!-- 1. WEBPAGE: PROFILE & ABOUT ME (COMBINED) -->
+        <audio id="bg-audio" loop preload="none">
+            <source src="The Feels (Instrumental).mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <main class="max-w-4xl mx-auto px-4 py-8 z-10 relative">
+
+        <!-- Cover Photo (Corrected Extension) -->
+        <div class="w-full h-48 sm:h-64 bg-pastelPink/30 rounded-3xl border-2 border-dashed border-softBlush mb-8 overflow-hidden relative flex items-center justify-center shadow-inner">
+            <img id="cover-photo" src="cover.png" alt="Cover Photo" class="w-full h-full object-cover">
+        </div>
+
+        <!-- 1. PROFILE & ABOUT ME -->
         <section id="page-home" class="webpage-section block space-y-8">
             <div class="bg-white p-6 sm:p-8 rounded-3xl shadow-sm border border-softBlush">
                 <h2 class="text-2xl font-bold text-slate-800 mb-6 flex items-center gap-2 border-b border-softBlush/60 pb-3">
-                    <span class="text-vibrantPink"></span> 1. Profile <span class="text-vibrantPink">💖</span>
+                    <span class="text-vibrantPink">💖</span> 1. Profile
                 </h2>
                 <div class="flex flex-col md:flex-row items-center gap-8">
-                    <!-- Profile Photo Placeholder -->
+                    <!-- Profile Photo (Corrected Extension) -->
                     <div class="relative group shrink-0">
                         <div class="w-48 h-56 bg-pastelPink rounded-2xl overflow-hidden border-4 border-ultraLightPink shadow-md relative">
-                            <img src="pfp" alt="Princess Charlotte" class="w-full h-full object-cover">
+                            <img src="pfp.png" alt="Princess Charlotte" class="w-full h-full object-cover">
                         </div>
                     </div>
-                    <!-- Details -->
                     <div class="space-y-3 text-sm sm:text-base w-full">
                         <p class="flex justify-between border-b border-pastelPink/60 pb-2"><strong class="text-slate-700">First Name:</strong> <span>Princess Charlotte</span></p>
                         <p class="flex justify-between border-b border-pastelPink/60 pb-2"><strong class="text-slate-700">Middle Initial:</strong> <span>C.</span></p>
@@ -180,15 +170,13 @@
                     </div>
                 </div>
 
-                <!-- Learn More About Me Toggle Button -->
                 <div class="mt-8 text-center pt-4 border-t border-pastelPink/60">
                     <button onclick="toggleAboutMe()" id="about-toggle-btn" class="px-6 py-3 rounded-full bg-vibrantPink text-white font-bold text-xs sm:text-sm shadow hover:bg-bubblegumPink transition active:scale-95 inline-flex items-center gap-2">
-                        <span></span> Learn More About Me <span id="toggle-arrow"></span>
+                        <span>✨</span> Learn More About Me <span id="toggle-arrow">🌸</span>
                     </button>
                 </div>
             </div>
 
-            <!-- ABOUT ME SECTION (Collapsible under Profile) -->
             <div id="about-me-container" class="hidden space-y-8 transition-all">
                 <div class="bg-white p-6 rounded-3xl shadow-sm border border-softBlush">
                     <h2 class="text-2xl font-bold text-slate-800 mb-4 border-b border-softBlush/60 pb-3 flex items-center gap-2">
@@ -231,43 +219,37 @@
                             <p>I love pink, light blue, burgundy, cherry red, and light purple because when I see them, my first instinct is to smile. It can be anything—as long as it's one of these colors, it brings me happiness everywhere I see them.</p>
                         </div>
 
-                        <!-- Flower Section with Picture Placeholders -->
+                        <!-- Flowers (Corrected Extensions) -->
                         <div class="bg-ultraLightPink/60 p-5 rounded-2xl border border-softBlush/60 space-y-4">
                             <h4 class="font-bold text-vibrantPink text-base flex items-center gap-1">🌸 Favorite Flowers & Their Meanings</h4>
                             <p class="text-xs text-slate-600">I love them mostly because of their meanings and colors:</p>
 
                             <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2">
-                                <!-- Sunflower -->
                                 <div class="bg-white p-3 rounded-xl border border-softBlush text-center shadow-xs">
                                     <img src="sunflower.png" alt="Sunflower" class="w-full h-24 object-cover rounded-lg mb-2">
                                     <strong class="block text-vibrantPink text-xs">Sunflower 🌻</strong>
                                     <span class="text-[11px] text-slate-500">Reminds me of happiness. Someone called me "Sun" as a nickname.</span>
                                 </div>
-                                <!-- Yellow Roses -->
                                 <div class="bg-white p-3 rounded-xl border border-softBlush text-center shadow-xs">
                                     <img src="yellow rose.png" alt="Yellow Roses" class="w-full h-24 object-cover rounded-lg mb-2">
                                     <strong class="block text-vibrantPink text-xs">Yellow Roses 🌹</strong>
                                     <span class="text-[11px] text-slate-500">Friendship anniversary memories.</span>
                                 </div>
-                                <!-- White Tulips -->
                                 <div class="bg-white p-3 rounded-xl border border-softBlush text-center shadow-xs">
                                     <img src="white tulips.png" alt="White Tulips" class="w-full h-24 object-cover rounded-lg mb-2">
                                     <strong class="block text-vibrantPink text-xs">White Tulips 🌷</strong>
                                     <span class="text-[11px] text-slate-500">Forgiveness and new beginnings.</span>
                                 </div>
-                                <!-- Peonies -->
                                 <div class="bg-white p-3 rounded-xl border border-softBlush text-center shadow-xs">
                                     <img src="peony.png" alt="Peonies" class="w-full h-24 object-cover rounded-lg mb-2">
                                     <strong class="block text-vibrantPink text-xs">Peonies 🌺</strong>
                                     <span class="text-[11px] text-slate-500">For a good life.</span>
                                 </div>
-                                <!-- Lilies -->
                                 <div class="bg-white p-3 rounded-xl border border-softBlush text-center shadow-xs">
                                     <img src="lily.png" alt="Lilies" class="w-full h-24 object-cover rounded-lg mb-2">
                                     <strong class="block text-vibrantPink text-xs">Lilies 🪷</strong>
                                     <span class="text-[11px] text-slate-500">Because they look so pretty.</span>
                                 </div>
-                                <!-- Delphinium -->
                                 <div class="bg-white p-3 rounded-xl border border-softBlush text-center shadow-xs">
                                     <img src="delphinium.png" alt="Delphinium" class="w-full h-24 object-cover rounded-lg mb-2">
                                     <strong class="block text-vibrantPink text-xs">Delphinium 🪻</strong>
@@ -285,35 +267,34 @@
                             <h4 class="font-bold text-vibrantPink flex items-center gap-1">🎀 Hobbies & My Deep Love for Writing Stories</h4>
                             <p>I'm not like other kids who are naturally talented. I do my hobbies purely for fun without the confidence to pursue them passionately. <strong>But with writing, I really, really love writing! Why?</strong> Because in writing, people don't get to see who you really are behind those works—you can be whoever you want. I can express myself more through writing. I put myself in their shoes and realize a lot more things in the world.</p>
                         </div>
+
                         <div>
-    <h4 class="font-bold text-vibrantPink flex items-center gap-1">💕 K-Pop Idols (TWICE & SEVENTEEN)</h4>
-    <p>Loving them was the most precious and best thing I've ever done. Even though they don't know who I am, they made me feel special. I feel like there's an invisible string that connects us both. I've been a fan since 2016–2017, and though I faced life problems early, finding them made me laugh and forget about those things for a while. That's why they're so precious to me.</p>
+                            <h4 class="font-bold text-vibrantPink flex items-center gap-1">💕 K-Pop Idols (TWICE & SEVENTEEN)</h4>
+                            <p>Loving them was the most precious and best thing I've ever done. Even though they don't know who I am, they made me feel special. I feel like there's an invisible string that connects us both. I've been a fan since 2016–2017, and though I faced life problems early, finding them made me laugh and forget about those things for a while. That's why they're so precious to me.</p>
 
-    <!-- TWICE & SEVENTEEN Photo Cards Below Text -->
-        <!-- TWICE Photo Card -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
-    <div class="bg-ultraLightPink p-3 rounded-2xl border border-softBlush text-center shadow-xs">
-        <img src="my tw.png"alt="TWICE" class="w-full h-44 object-cover rounded-xl mb-2">
-        <strong class="block text-vibrantPink text-xs font-bold">TWICE 💖</strong>
-    </div>
-
-        <!-- SEVENTEEN Photo Card -->
-       <div class="bg-ultraLightPink p-3 rounded-2xl border border-softBlush text-center shadow-xs">
-        <img src="my svt.png" alt="SEVENTEEN" class="w-full h-44 object-cover rounded-xl mb-2">
-        <strong class="block text-vibrantPink text-xs font-bold">SEVENTEEN 💎</strong>
-    </div>
-</div>
-</div>
-
+                            <!-- TWICE & SEVENTEEN Cards (Fixed HTML Structure & Extensions) -->
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+                                <div class="bg-ultraLightPink p-3 rounded-2xl border border-softBlush text-center shadow-xs">
+                                    <img src="my tw.png" alt="TWICE" class="w-full h-44 object-cover rounded-xl mb-2">
+                                    <strong class="block text-vibrantPink text-xs font-bold">TWICE 💖</strong>
+                                </div>
+                                <div class="bg-ultraLightPink p-3 rounded-2xl border border-softBlush text-center shadow-xs">
+                                    <img src="my svt.png" alt="SEVENTEEN" class="w-full h-44 object-cover rounded-xl mb-2">
+                                    <strong class="block text-vibrantPink text-xs font-bold">SEVENTEEN 💎</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- 2. WEBPAGE: PICTURES AND VIDEOS -->
+        <!-- 2. PICTURES & VIDEOS -->
         <section id="page-gallery" class="webpage-section hidden">
             <div class="bg-white p-6 sm:p-8 rounded-3xl shadow-sm border border-softBlush space-y-8">
                 <div>
                     <h2 class="text-2xl font-bold text-slate-800 mb-2 flex items-center gap-2">
-                        <span>🎀</span> 2. Pictures & Videos <span>💖</span>
+                        <span>🎀</span> 2. Picture & Videos <span>💖</span>
                     </h2>
                     <p class="text-xs text-slate-500">Compiled gallery with interactive tap/click animations and landscape video space.</p>
                 </div>
@@ -324,10 +305,10 @@
                     </h3>
                     <div class="relative w-full h-64 sm:h-96 rounded-2xl overflow-hidden border-2 border-softBlush bg-pastelPink/30 group">
                         <div id="gallery-slider">
-                         <img src="photo1.png" class="gallery-slide active-slide w-full h-64 sm:h-96 object-cover cursor-pointer" onclick="nextGallerySlide()">
-                         <img src="photo2.png" class="gallery-slide w-full h-64 sm:h-96 object-cover cursor-pointer" onclick="nextGallerySlide()">
-                         <img src="photo3.png" class="gallery-slide w-full h-64 sm:h-96 object-cover cursor-pointer" onclick="nextGallerySlide()">
-                     </div>
+                            <img src="photo1.png" class="gallery-slide active-slide w-full h-64 sm:h-96 object-cover cursor-pointer" onclick="nextGallerySlide()">
+                            <img src="photo2.png" class="gallery-slide w-full h-64 sm:h-96 object-cover cursor-pointer" onclick="nextGallerySlide()">
+                            <img src="photo3.png" class="gallery-slide w-full h-64 sm:h-96 object-cover cursor-pointer" onclick="nextGallerySlide()">
+                        </div>
                         <button onclick="prevGallerySlide()" class="absolute left-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/90 text-vibrantPink font-bold flex items-center justify-center shadow hover:bg-vibrantPink hover:text-white transition">❮</button>
                         <button onclick="nextGallerySlide()" class="absolute right-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/90 text-vibrantPink font-bold flex items-center justify-center shadow hover:bg-vibrantPink hover:text-white transition">❯</button>
                         <span class="absolute bottom-3 left-1/2 -translate-x-1/2 bg-white/90 text-[10px] px-3 py-1 rounded-full text-slate-600 font-medium border border-softBlush">Tap photo or arrows to see next photo 🎀</span>
@@ -335,20 +316,20 @@
                 </div>
 
                 <div>
-    <h3 class="font-bold text-slate-800 mb-3 flex items-center gap-2">
-        <span>🎬</span> Favorite K-Pop Video (Landscape Mode)
-    </h3>
-    <div class="w-full aspect-video bg-slate-900 rounded-2xl overflow-hidden border-2 border-softBlush shadow-sm flex items-center justify-center">
-    <video controls class="w-full h-full object-cover rounded-2xl">
-        <source src="tw and svt video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-</div>
-</div>
+                    <h3 class="font-bold text-slate-800 mb-3 flex items-center gap-2">
+                        <span>🎬</span> Favorite K-Pop Video (Landscape Mode)
+                    </h3>
+                    <div class="w-full aspect-video bg-slate-900 rounded-2xl overflow-hidden border-2 border-softBlush shadow-sm flex items-center justify-center">
+                        <video controls class="w-full h-full object-cover rounded-2xl">
+                            <source src="tw and svt video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- 3. WEBPAGE: PROJECTS / PORTFOLIO -->
+        <!-- 3. PROJECTS / PORTFOLIO -->
         <section id="page-portfolio" class="webpage-section hidden">
             <div class="bg-white p-6 sm:p-8 rounded-3xl shadow-sm border border-softBlush space-y-6">
                 <div>
@@ -386,7 +367,7 @@
             </div>
         </section>
 
-        <!-- 4. WEBPAGE: CONTACT -->
+        <!-- 4. CONTACT -->
         <section id="page-contact" class="webpage-section hidden">
             <div class="bg-white p-6 sm:p-8 rounded-3xl shadow-sm border border-softBlush space-y-6">
                 <div>
@@ -396,30 +377,13 @@
                     <p class="text-xs text-slate-500">Get in touch with Princess Charlotte via email or phone.</p>
                 </div>
 
-                <!-- Personal Contact Details (Email & Phone Number) -->
                 <div class="bg-ultraLightPink p-5 rounded-2xl border border-softBlush space-y-3 text-xs sm:text-sm text-slate-700">
                     <h3 class="font-bold text-vibrantPink text-base mb-2 flex items-center gap-1">📫 Personal Contact Information</h3>
-                    
-                    <p class="flex items-center gap-2">
-                        <span class="w-6 text-center">📍</span>
-                        <strong>Address:</strong> 
-                        <span>Barangay Looc, Calamba City, Laguna</span>
-                    </p>
-
-                    <p class="flex items-center gap-2">
-                        <span class="w-6 text-center">✉️</span>
-                        <strong>Email Address:</strong> 
-                        <span class="text-slate-600 italic">pcgrutas@ccc.edu.ph</span>
-                    </p>
-
-                    <p class="flex items-center gap-2">
-                        <span class="w-6 text-center">📱</span>
-                        <strong>Phone Number:</strong> 
-                        <span class="text-slate-600 italic">+63 964 917 6713</span>
-                    </p>
+                    <p class="flex items-center gap-2"><span class="w-6 text-center">📍</span><strong>Address:</strong> <span>Barangay Looc, Calamba City, Laguna</span></p>
+                    <p class="flex items-center gap-2"><span class="w-6 text-center">✉️</span><strong>Email Address:</strong> <span class="text-slate-600 italic">pcgrutas@ccc.edu.ph</span></p>
+                    <p class="flex items-center gap-2"><span class="w-6 text-center">📱</span><strong>Phone Number:</strong> <span class="text-slate-600 italic">+63 964 917 6713</span></p>
                 </div>
 
-                <!-- Contact Message Form -->
                 <div>
                     <h3 class="font-bold text-slate-800 text-sm mb-3 flex items-center gap-1">💌 Send a Direct Message</h3>
                     <form class="space-y-4" onsubmit="event.preventDefault(); alert('Message sent successfully! 💖');">
@@ -441,7 +405,6 @@
                     </form>
                 </div>
 
-                <!-- Heart Tapper Button Moved Below Contacts Section -->
                 <div class="pt-6 border-t border-softBlush/60 text-center">
                     <p class="text-xs text-slate-500 mb-2 font-medium">Leave some love for Princess Charlotte! 💖</p>
                     <button onclick="triggerConfettiBurst(event)" class="px-6 py-3 rounded-full bg-pastelPink text-vibrantPink text-sm font-bold shadow-sm hover:bg-softBlush transition active:scale-95 border border-softBlush inline-flex items-center gap-2">
@@ -453,19 +416,16 @@
 
     </main>
 
-    <!-- Footer -->
     <footer class="bg-white border-t border-softBlush py-6 text-center text-xs text-slate-500 z-10 relative mt-12">
         <p class="font-cursive-override text-3xl text-vibrantPink font-normal">Princess Charlotte C. Grutas</p>
         <p class="text-[11px] text-vibrantPink/80 mt-1">Seasa's Personal Website • Made with Pink, Bows & Hearts 🎀💖</p>
     </footer>
 
-    <!-- Interactive Logic -->
     <script>
         let heartCount = 0;
         let isAudioPlaying = false;
         let currentSlide = 0;
 
-        // Toggle "Learn More About Me" Section
         function toggleAboutMe() {
             const container = document.getElementById('about-me-container');
             const arrow = document.getElementById('toggle-arrow');
@@ -478,7 +438,6 @@
             }
         }
 
-        // Mouse Trail Particles (Hearts and Bows)
         document.addEventListener('mousemove', function(e) {
             if (Math.random() > 0.82) {
                 const particle = document.createElement('div');
@@ -491,7 +450,6 @@
             }
         });
 
-        // Webpage Tab Switching Logic (4 Tabs)
         function switchWebpage(pageId) {
             const pages = document.querySelectorAll('.webpage-section');
             pages.forEach(p => p.classList.add('hidden'));
@@ -505,7 +463,6 @@
             document.getElementById(`tab-${pageId}`).className = 'webpage-tab px-4 py-1.5 rounded-full bg-vibrantPink text-white shadow-sm transition';
         }
 
-        // Gallery Slider Logic
         function showSlide(index) {
             const slides = document.querySelectorAll('.gallery-slide');
             slides.forEach(s => s.classList.remove('active-slide'));
@@ -516,13 +473,11 @@
         function nextGallerySlide() { showSlide(currentSlide + 1); }
         function prevGallerySlide() { showSlide(currentSlide - 1); }
 
-        // Heart Counter Tapper
         function triggerConfettiBurst(e) {
             heartCount++;
             document.getElementById('nav-heart-count').innerText = heartCount;
         }
 
-        // Audio Toggle Player
         function toggleAudio() {
             const audio = document.getElementById('bg-audio');
             const icon = document.getElementById('audio-icon');
@@ -545,7 +500,6 @@
             }
         }
 
-        // Floating Background Elements
         window.onload = function() {
             const container = document.getElementById('floating-container');
             const icons = ['🎀', '💖', '💕', '💗', '🎀'];
@@ -562,4 +516,4 @@
         };
     </script>
 </body>
-    </html>
+</html>
